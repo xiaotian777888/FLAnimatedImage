@@ -356,6 +356,7 @@ static NSHashTable *allAnimatedImagesWeak;
 + (instancetype)animatedImageWithGIFData:(NSData *)data
 {
     FLAnimatedImage *animatedImage = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data];
+    animatedImage.loopCount = 0;
     return animatedImage;
 }
 
